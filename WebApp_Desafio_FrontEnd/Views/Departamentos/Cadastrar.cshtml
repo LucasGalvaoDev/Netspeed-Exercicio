@@ -1,0 +1,59 @@
+﻿@model WebApp_Desafio_FrontEnd.ViewModels.DepartamentoViewModel
+
+@using WebApp_Desafio_FrontEnd.ViewModels
+
+<div class="row wrapper border-bottom white-bg page-heading header-title">
+    <div class="col-sm-12 col-md-6 text-left align-self-center order-md-0 order-12">
+        <h2>@ViewData["Title"]</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+
+        <form id="form" asp-action="Cadastrar" class="wizard-big" enctype="multipart/form-data" role="form" onsubmit="return false;">
+
+            <input type="hidden" asp-for="ID" />
+
+            <div class="row">
+                <div class="form-group col-lg-7 col-md-6 col-sm-12">
+                    <label class="form-label" asp-for="Descricao"></label>
+                    <input type="text" class="form-control" asp-for="Descricao">
+                    <span class="text-danger" asp-validation-for="Descricao"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="panel-body">
+    <fieldset>
+        <div class="row">
+            <div class="form-group col-sm-12 text-right float-right mb-0">
+                <button type="button" id="btnCancelar" class="btn btn-outline btn-default" data-style="slide-left">Cancelar</button>
+                @*<button type="button" id="btnExcluir" class="btn btn-outline btn-danger" data-style="slide-left">Excluir</button>*@
+                <button type="button" id="btnSalvar" class="btn btn-outline btn-primary" data-style="slide-left">Salvar</button>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+@section styles
+    {
+    <link rel="stylesheet" href="~/lib/sweetalert2/sweetalert2.min.css" />
+    @*<link rel="stylesheet" href="~/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />*@
+    @*<link rel="stylesheet" href="~/lib/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />*@
+}
+
+@section scripts
+    {
+    <!-- SweetAlert2 -->
+    <script src="~/lib/sweetalert2/sweetalert2.all.min.js"></script>
+    <!-- Bootstrap Datepicker -->
+    <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/bootstrap-datepicker/locales/bootstrap-datepicker.pt-br.min.js"></script>
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <script src="~/js/Chamados/Cadastrar.js" asp-append-version="true"></script>
+}

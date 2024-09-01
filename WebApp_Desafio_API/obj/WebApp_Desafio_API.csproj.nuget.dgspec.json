@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_API\\WebApp_Desafio_API.csproj": {}
+  },
+  "projects": {
+    "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_API\\WebApp_Desafio_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_API\\WebApp_Desafio_API.csproj",
+        "projectName": "WebApp_Desafio_API",
+        "projectPath": "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_API\\WebApp_Desafio_API.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_BackEnd\\WebApp_Desafio_BackEnd.csproj": {
+                "projectPath": "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_BackEnd\\WebApp_Desafio_BackEnd.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Windows.Compatibility": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.116, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_BackEnd\\WebApp_Desafio_BackEnd.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_BackEnd\\WebApp_Desafio_BackEnd.csproj",
+        "projectName": "WebApp_Desafio_BackEnd",
+        "projectPath": "D:\\lucas\\Downloads\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_Desenvolvimento\\WebApp_Desafio_BackEnd\\WebApp_Desafio_BackEnd.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

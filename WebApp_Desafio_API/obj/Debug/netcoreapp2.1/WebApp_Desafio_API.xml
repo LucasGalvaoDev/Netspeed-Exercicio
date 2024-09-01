@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp_Desafio_API</name>
+    </assembly>
+    <members>
+        <member name="T:WebApp_Desafio_API.Controllers.ChamadosController">
+            <summary>
+            ChamadosController
+            </summary>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.ChamadosController.Listar">
+            <summary>
+            Lista todos os chamados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.ChamadosController.Obter(System.Int32)">
+            <summary>
+            Obtém dados de um chamado específico
+            </summary>
+            <param name="idChamado">O ID do chamado a ser obtido</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.ChamadosController.Gravar(WebApp_Desafio_API.ViewModels.ChamadoRequest)">
+            <summary>
+            Grava os dados de um chamado
+            </summary>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.ChamadosController.Excluir(System.Int32)">
+            <summary>
+            Exclui um chamado específico
+            </summary>
+        </member>
+        <member name="T:WebApp_Desafio_API.Controllers.DepartamentosController">
+            <summary>
+            DepartamentosController
+            </summary>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.DepartamentosController.Listar">
+            <summary>
+            Lista todos os departamento
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.DepartamentosController.Obter(System.Int32)">
+            <summary>
+            Obtém dados de um departamento específico
+            </summary>
+            <param name="idDepartamento">O ID do departamento a ser obtido</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.DepartamentosController.Gravar(WebApp_Desafio_API.ViewModels.DepartamentoRequest)">
+            <summary>
+            Grava os dados de um departamento
+            </summary>
+        </member>
+        <member name="M:WebApp_Desafio_API.Controllers.DepartamentosController.Excluir(System.Int32)">
+            <summary>
+            Exclui um departamento específico
+            </summary>
+        </member>
+        <member name="T:WebApp_Desafio_API.Extensions.ControllerExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp_Desafio_API.Extensions.ControllerExtensions.ExceptionProcess(Microsoft.AspNetCore.Mvc.ControllerBase,System.Exception)">
+            <summary>
+            Retorna um Objeto completo com o StatusCode
+            </summary>
+            <param name="controllerBase"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp_Desafio_API.Extensions.ControllerExtensions.ExceptionProcess(Microsoft.AspNetCore.Mvc.ControllerBase,System.Exception,WebApp_Desafio_API.ViewModels.Enums.AlertTypes)">
+            <summary>
+            Retorna um Objeto completo com o StatusCode
+            </summary>
+            <param name="controllerBase"></param>
+            <param name="ex"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp_Desafio_API.Startup.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:WebApp_Desafio_API.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.Startup.CurrentEnvironment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebApp_Desafio_API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:WebApp_Desafio_API.ViewModels.ChamadoRequest">
+            <summary>
+            Solicitação da chamada
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoRequest.id">
+            <summary>
+            ID do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoRequest.assunto">
+            <summary>
+            Assunto do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoRequest.solicitante">
+            <summary>
+            Solicitante do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoRequest.idDepartamento">
+            <summary>
+            ID do Departamento do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoRequest.dataAbertura">
+            <summary>
+            Data de Abertura do Chamado
+            </summary>
+        </member>
+        <member name="T:WebApp_Desafio_API.ViewModels.ChamadoResponse">
+            <summary>
+            Resposta da chamada
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoResponse.id">
+            <summary>
+            ID do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoResponse.assunto">
+            <summary>
+            Assunto do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoResponse.solicitante">
+            <summary>
+            Solicitante do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoResponse.idDepartamento">
+            <summary>
+            ID do Departamento do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoResponse.departamento">
+            <summary>
+            Nome do Departamento do Chamado
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ChamadoResponse.dataAbertura">
+            <summary>
+            Data de Abertura do Chamado
+            </summary>
+        </member>
+        <member name="T:WebApp_Desafio_API.ViewModels.DepartamentoRequest">
+            <summary>
+            Solicitação da chamada
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.DepartamentoRequest.id">
+            <summary>
+            ID do Departamento
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.DepartamentoRequest.descricao">
+            <summary>
+            Descrição do Departamento
+            </summary>
+        </member>
+        <member name="T:WebApp_Desafio_API.ViewModels.DepartamentoResponse">
+            <summary>
+            Resposta da chamada
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.DepartamentoResponse.id">
+            <summary>
+            ID do Departamento
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.DepartamentoResponse.descricao">
+            <summary>
+            Descrição do Departamento
+            </summary>
+        </member>
+        <member name="T:WebApp_Desafio_API.ViewModels.ErrorViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ErrorViewModel.Message">
+            <summary>
+            Get or Set Message
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ErrorViewModel.Validation">
+            <summary>
+            Get or Set Message
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ErrorViewModel.PropertyName">
+            <summary>
+            Get or Set PropertyName
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ErrorViewModel.StatusCode">
+            <summary>
+            Get or Set StatusCode
+            </summary>
+        </member>
+        <member name="P:WebApp_Desafio_API.ViewModels.ErrorViewModel.Type">
+            <summary>
+            Get or Set Type
+            </summary>
+        </member>
+    </members>
+</doc>
